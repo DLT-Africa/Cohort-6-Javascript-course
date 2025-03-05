@@ -141,6 +141,11 @@ console.log(`Day ${dayNumber} is ${dayName}`);
 
 // Loops are used to execute a block of code multiple times.
 
+
+// for (initialization; condition; update) {
+//   //Code execute
+// }
+
 for (let i = 0; i < 10; i++) {
   console.log(i);
 }
@@ -149,3 +154,87 @@ let table = 5;
 for (let i = 1; i <= 10; i++) {
   console.log(`${table} * ${i} = ${table * i}`);
 }
+
+//Example2
+
+for(let i =1; i <=10; i +=2) {
+  console.log("Odd number:", i)
+} 
+
+//Example3
+
+for(let i =1; i <= 5; i++ ) {
+  if(i === 3) {
+    continue
+  }
+  console.log(i)
+}
+
+
+//Example4
+ let cohorts = ["Kb", "Alaba", "Leke", "Drizzy"]
+
+ for(let i = 1; i < cohorts.length; i++) {
+  console.log(cohorts[i])
+ }
+
+let MyName = "OLOYEDE"
+for(let i =0; i < MyName.length; i++) {
+  console.log(MyName[i])
+}
+
+
+//for...in loop
+
+//Example1
+let user = {name: "Naheem", Age: 10, city: "Osun"}
+
+for(key in user) {
+  console.log(key + "-", user[key])
+}
+
+//while loop
+
+// while (condition) {
+//   //code to execute
+// }
+
+//Example 1
+
+// let i = 1;
+
+// while(i <= 7) {
+//   console.log(i)
+// }
+
+
+let y = 0;
+
+while(y < 5) {
+  y++;
+
+  if(y === 3) {
+    continue;
+  }
+
+  console.log(y)
+}
+
+
+let fruits = ["Apple", "Orange", "Mango", "Pawpaw"];
+let i = 0;
+while(i < fruits.length) {
+  console.log(fruits[i]);
+  i++
+}
+
+//Foreach
+const students = ['Abdullah', 'Mubarak', 'Abeeb', 'Ridwan']
+students.forEach((student, i) => {
+  console.log(`index ${i}: ${student}`)
+})
+
+
+
+
+// console.log(NaN == NaN)

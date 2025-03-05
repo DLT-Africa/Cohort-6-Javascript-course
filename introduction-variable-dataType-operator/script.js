@@ -82,9 +82,36 @@ console.log(++num2);
 
 
 
+//Equality Operator
+//Strict
+console.log(5 === "5");
+console.log(5 === 5);
+console.log(true === 1)
+// console.log([] === 0)
+console.log(null === undefined)
+// console.log([1, 2, 3] === [1, 2, 3])
+// console.log({} === {})
+
+let obj1 = {name: "lateefa"};
+let Obj2 = {name: "lateefa"}
+
+console.log(obj1 === Obj2);
+
+const arr1 = [1, 2, 3]
+ console.log(typeof arr1)
+ const arr2 = [1, 2, 3]
+ 
+ console.log(arr1 === arr2)
 
 
-
+ //loose
+ console.log([] == 1)
+ console.log([1] == 1);
+ console.log(null == undefined);
+ console.log(null == false);
+ console.log("\t\n" == 0);
+ console.log("Ridox" == "Dollyp");
+ console.log([1, ,2] == "1,2")
 
 
 
