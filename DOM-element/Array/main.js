@@ -204,15 +204,32 @@ const productWithId = products.map((product, index) => ({
   ...product,
 }));
 
-console.log(productWithId)
+console.log(productWithId);
 // console.log(products)
 
-const nummies = [1,2,3,4,5,6,7,8,9,10];
+const nummies = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 const discoveries = nummies.map((i) => {
-    if(i < 6) {
-        return i
-    }
-})
+  if (i < 6) {
+    return i;
+  }
+});
 
-console.log(discoveries)
+console.log(discoveries);
+
+// Filter method.
+const evenNumber = nummies.filter((i) => i % 2 === 0);
+console.log(evenNumber);
+
+const below = productWithId.filter((product) => product.price <= 1000);
+console.log(below);
+
+const seven = productWithId.filter((sevenChars) => sevenChars.name.length < 7);
+
+console.log(seven);
+
+let newArr = [100, "Pelumi", false, {}, null, undefined]
+
+const filteredString = newArr.filter((data) => typeof data === "string")
+
+console.log(filteredString)
