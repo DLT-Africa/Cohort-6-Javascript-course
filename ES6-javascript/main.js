@@ -30,3 +30,35 @@ console.log(circumArea)
 const anything = circleAreaCircum(10, "baba Tee")
 
 console.log(anything)
+
+
+// setItem()
+// getItem()
+
+localStorage.setItem("name", "Dolapo");
+let result = document.getElementById("result").innerHTML = localStorage.getItem("name")
+console.log(result)
+
+
+document.addEventListener("DOMContentLoaded", function(){
+
+    // Retrive the save count from local storage or initialize to 0 if not present
+    let count = localStorage.getItem("clickCount") ? parseInt(localStorage.getItem("clickCount")) : 0;
+    const counterElement = document.getElementById("counter")
+
+    // Display the current count
+    counterElement.textContent = count
+
+    // Add a click event listenner to the button
+    document.getElementById("increment").addEventListener("click", function() {
+        count++;
+        counterElement.textContent = count
+
+        // save updated count back into localstorage
+
+        localStorage.setItem("clickCount", count)
+    })
+})
+
+
+
