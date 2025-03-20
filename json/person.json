@@ -1,0 +1,10 @@
+{
+  "name": "Lateefat Ajayi Omowonuola Olubisi Alake",
+  "age": 12,
+  "hobbies": ["sleeping", "walking", "talking"],
+  "address": {
+    "street": "Ile epo",
+    "number": 2,
+    "city": "Lagos"
+  }
+}
